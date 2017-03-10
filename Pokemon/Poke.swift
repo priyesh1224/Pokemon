@@ -11,6 +11,8 @@ class poke {
     
     var _pokename : String!
     var _pokeid : Int!
+    var hei :String!
+    var be : String!
     var pokename : String {
         if _pokename == nil {
             _pokename = ""
@@ -23,10 +25,12 @@ class poke {
         }
         return _pokeid
     }
-    init(name : String , id : Int)
+    init(name : String , id : Int,height : String, be : String)
     {
         self._pokeid = id
         self._pokename = name
+       self.hei = height
+       self.be = be
     }
     
     
